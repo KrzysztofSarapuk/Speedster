@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 56
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 82
+  controlID: 57
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 83
+  controlID: 58
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 309
     height: 556
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -462,18 +462,18 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b035fffff439ffff6afbffff
+      m_ExpandedIDs: be1bfaff0e21faffe2f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: car-yellow
-        m_OriginalName: car-yellow
+        m_Name: car2
+        m_OriginalName: car2
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -63760
+        m_UserData: -17880
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -522,9 +522,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0.9688426, z: -0.05976081}
+    m_Target: {x: -5.8497834, y: 3.6972327, z: 3.7280552}
     speed: 2
-    m_Value: {x: 0, y: 0.9688426, z: -0.05976081}
+    m_Value: {x: -5.8497834, y: 3.6972327, z: 3.7280552}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -571,13 +571,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.106912114, y: 0.42386004, z: -0.050469942, w: 0.8980023}
+    m_Target: {x: 0.052770134, y: 0.30792427, z: -0.0171064, w: 0.9498179}
     speed: 2
-    m_Value: {x: 0.10690982, y: 0.42385095, z: -0.05046886, w: 0.8979831}
+    m_Value: {x: 0.052768853, y: 0.3079168, z: -0.017105985, w: 0.94979477}
   m_Size:
-    m_Target: 2.83201
+    m_Target: 6.4320107
     speed: 2
-    m_Value: 2.83201
+    m_Value: 6.4320107
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -690,22 +690,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/All-Prefabs/TREE-prefabs
+    - Assets/cars/old cars
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/All-Prefabs/TREE-prefabs
+  - Assets/cars/old cars
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: E:\Speedster\Speedster
+  m_LastProjectPath: F:\PracaMagisterska\Speedster\Speedster
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 44410000
-    m_LastClickedID: 16708
-    m_ExpandedIDs: 0000000004410000064100003441000000ca9a3b
+    m_SelectedIDs: c4420000
+    m_LastClickedID: 17092
+    m_ExpandedIDs: 0000000092420000944200009c42000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,7 +733,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000441000006410000
+    m_ExpandedIDs: 000000009242000094420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -761,7 +761,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000082990000347b00000000000026400000
+    m_ExpandedInstanceIDs: c623000082990000347b00002640000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
