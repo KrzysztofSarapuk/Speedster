@@ -173,6 +173,7 @@ MonoBehaviour:
   Home1: {fileID: 3600363219147705447, guid: 166864fee30fcad4d94be460d8d59318, type: 3}
   Home2: {fileID: 3170904550077100772, guid: 4e67832164271bd44a09a70e0f996810, type: 3}
   Home3: {fileID: 4606227801130147851, guid: 7e68f247608861d4bb5302ad80c52f81, type: 3}
+  yellowCar: {fileID: 8737796313236687492, guid: 89a8364d10323ab49a11b96110f47a3a, type: 3}
   width: 700
   depth: 700
 --- !u!1 &293152557
