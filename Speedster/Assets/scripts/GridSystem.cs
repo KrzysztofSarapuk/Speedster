@@ -11,7 +11,7 @@ public class GridSystem : MonoBehaviour
     public GameObject Home1;
     public GameObject Home2;
     public GameObject Home3;
-    public GameObject yellowCar;
+    public GameObject yellowCar; public GameObject blueCar; public GameObject orangeCar; public GameObject Car;
     public int width = 140;
     public int depth = 140;
 
@@ -27,9 +27,38 @@ public class GridSystem : MonoBehaviour
                 Vector3 position = new Vector3(x, 0, z); Vector3 homeposition = new Vector3( x + 35, 0, z + 35);
                 GameObject instatedCrossroad = Instantiate(crossroad, position, Quaternion.identity);
 
-                int randomYellowPosition = Random.Range(15, 55);
+                int randomCar1 = Random.Range(1, 4);
+                
+                if (randomCar1 == 1)
+                {
+                    Car = yellowCar;
+                }
+
+                int randomYellowPosition = Random.Range(10, 20);
                 Vector3 YellowCarPosition = new Vector3(x + 5, 1, z + randomYellowPosition);
-                GameObject instatedYellowCar = Instantiate(yellowCar, YellowCarPosition, Quaternion.identity);
+                GameObject instatedYellowCar = Instantiate(Car, YellowCarPosition, Quaternion.identity);
+
+
+                if (randomCar1 == 2)
+                {
+                    Car = blueCar;
+                }
+
+                int randomBluePosition = Random.Range(25, 35);
+                Vector3 BlueCarPosition = new Vector3(x + 5, 1, z + randomBluePosition);
+                GameObject instatedBlueCar = Instantiate(Car, BlueCarPosition, Quaternion.identity);
+
+                if (randomCar1 == 3)
+                {
+                    Car = orangeCar;
+                }
+
+                int randomOrangePosition = Random.Range(40, 55);
+                Vector3 OrangeCarPosition = new Vector3(x + 5, 1, z + randomOrangePosition);
+                GameObject instatedOrangeCar = Instantiate(Car, OrangeCarPosition, Quaternion.identity);
+
+
+
 
                 // trees x = right, z = forward position ( between 16-50) Random.Range(12, 50)
                 //Vector3 treePosition02 = new Vector3(x + 12, 0, z + Random.Range(12, 50))
