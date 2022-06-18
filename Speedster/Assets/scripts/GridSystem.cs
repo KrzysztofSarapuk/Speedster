@@ -12,6 +12,7 @@ public class GridSystem : MonoBehaviour
     public GameObject Home2;
     public GameObject Home3;
     public GameObject yellowCar; public GameObject blueCar; public GameObject orangeCar; public GameObject Car;
+    public GameObject YellowCarMoving;
     public int width = 140;
     public int depth = 140;
 
@@ -26,6 +27,11 @@ public class GridSystem : MonoBehaviour
                 //base
                 Vector3 position = new Vector3(x, 0, z); Vector3 homeposition = new Vector3( x + 35, 0, z + 35);
                 GameObject instatedCrossroad = Instantiate(crossroad, position, Quaternion.identity);
+
+                int YellowCarmoving = Random.Range(10, 200); //driving yellow cars
+                Vector3 YellowCarMovingPosition = new Vector3(x - 3, 1, z + YellowCarmoving);
+                GameObject instatedYellowCarMoving = Instantiate(YellowCarMoving, YellowCarMovingPosition, Quaternion.identity);
+
 
                 int randomCar1 = Random.Range(1, 4);
                 
