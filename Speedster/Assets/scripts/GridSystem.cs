@@ -4,19 +4,35 @@ public class GridSystem : MonoBehaviour
 {
     public GameObject straight; public GameObject crossroad; public GameObject tree01;
     public GameObject tree02; public GameObject Home1; public GameObject Home2; public GameObject Home3;
-    public GameObject yellowCar; public GameObject blueCar; public GameObject orangeCar; public GameObject Car;
+    public GameObject yellowCar; public GameObject blueCar; public GameObject orangeCar; public GameObject Car; public GameObject straightline;
     public GameObject YellowCarMoving; public int width = 140; public int depth = 140;
 
     void Start()
     {
-        for (int z = 0; z < depth; z += 70)
+        for (int z = 0; z < depth; z += 100)
         {
-            for (int x = 0; x < width; x += 70)
+            for (int x = 0; x < width; x += 100)
             {
                 //base
+                int straightstreet = 0;
                 Vector3 position = new Vector3(x, 0, z); Vector3 homeposition = new Vector3( x + 35, 0, z + 35);
-                GameObject instatedCrossroad = Instantiate(crossroad, position, Quaternion.identity);
-                int YellowCarmoving = Random.Range(10, 200); //driving yellow cars
+                //GameObject instatedCrossroad = Instantiate(crossroad, position, Quaternion.identity);
+
+                straightstreet = Random.Range(1, 5); //base straight
+
+                if (straightstreet == 1)
+                {
+                    GameObject instatedStraightline = Instantiate(straightline, position, Quaternion.identity);
+                }
+
+                if (straightstreet > 1 )
+                {
+                    GameObject instatedCrossroad = Instantiate(crossroad, position, Quaternion.identity);
+                }
+                straightstreet = 0;
+
+
+                int YellowCarmoving = Random.Range(10, 450); //driving yellow cars
                 Vector3 YellowCarMovingPosition = new Vector3(x - 3, 1, z + YellowCarmoving);
                 GameObject instatedYellowCarMoving = Instantiate(YellowCarMoving, YellowCarMovingPosition, Quaternion.identity);
                 int randomCar1 = Random.Range(1, 4);               

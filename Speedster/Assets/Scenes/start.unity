@@ -177,6 +177,7 @@ MonoBehaviour:
   blueCar: {fileID: 4355899647128712910, guid: 362d111ea2238a246934785b86cd6ce1, type: 3}
   orangeCar: {fileID: 1125738458769942600, guid: 06b7d133f8da3ee478cbb97e2049f1ae, type: 3}
   Car: {fileID: 4355899647128712910, guid: 362d111ea2238a246934785b86cd6ce1, type: 3}
+  straightline: {fileID: 7402271964992479288, guid: ac510c8754302e647916734e2d0c81d0, type: 3}
   YellowCarMoving: {fileID: 8295679157106457113, guid: 27e176b52c111ec4bb67915c38287f97, type: 3}
   width: 700
   depth: 700
@@ -525,7 +526,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710007868}
-  m_LocalRotation: {x: 0.17067233, y: -0.00000000847696, z: 0.0000000014683262, w: 0.98532784}
+  m_LocalRotation: {x: 0.17067233, y: 0.000000008476966, z: -0.0000000014683269, w: 0.98532784}
   m_LocalPosition: {x: 0, y: 6.5, z: -23.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1076,7 +1077,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611956371}
-  m_LocalRotation: {x: 0.17067233, y: -0.00000000847696, z: 0.0000000014683262, w: 0.98532784}
+  m_LocalRotation: {x: 0.17067233, y: 0.000000008476966, z: -0.0000000014683269, w: 0.98532784}
   m_LocalPosition: {x: 0, y: 6.5, z: -23.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
