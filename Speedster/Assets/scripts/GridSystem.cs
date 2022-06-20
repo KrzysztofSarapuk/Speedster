@@ -3,9 +3,9 @@ using UnityEngine;
 public class GridSystem : MonoBehaviour
 {
     public GameObject straight; public GameObject crossroad; public GameObject tree01;
-    public GameObject tree02; public GameObject Home1; public GameObject Home2; public GameObject Home3;
+    public GameObject tree02; public GameObject tree03; public GameObject Home1; public GameObject Home2; public GameObject Home3; public GameObject Home4;
     public GameObject yellowCar; public GameObject blueCar; public GameObject orangeCar; public GameObject Car; public GameObject straightline;
-    public GameObject YellowCarMoving; public int width = 140; public int depth = 140;
+    public GameObject YellowCarMoving; public int width = 140; public int depth = 140;public int rndTree03; public int garage;
 
     void Start()
     {
@@ -79,6 +79,13 @@ public class GridSystem : MonoBehaviour
                 GameObject tree02R = Instantiate(tree02, tree02PositionRight, Quaternion.identity);
                 Vector3 tree02PositionLeft = new Vector3(x - 12, 0, z + randomtree + 10);
                 GameObject tree02L = Instantiate(tree02, tree02PositionLeft, Quaternion.identity);
+                rndTree03 = Random.Range(20, 35);
+                Vector3 tree03PositionLeft = new Vector3(x - 12, 0, z + randomtree + rndTree03);
+                GameObject tree03L = Instantiate(tree03, tree03PositionLeft, Quaternion.identity);
+
+                garage = Random.Range(30, 50);
+                Vector3 rndgarage = new Vector3(x - 20, 0, z + randomtree + garage);
+                GameObject rndhomo04 = Instantiate(Home4, rndgarage, Quaternion.identity);
             }
         }
     }
