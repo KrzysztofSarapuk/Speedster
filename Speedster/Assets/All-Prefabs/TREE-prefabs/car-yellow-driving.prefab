@@ -131,5 +131,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   yellowCar: {fileID: 8677306807485554851}
-  startPosition: 660
+  startPosition: 630
   endPosition: -40
