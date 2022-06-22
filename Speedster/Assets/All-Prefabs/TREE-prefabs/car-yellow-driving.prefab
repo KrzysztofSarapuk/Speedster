@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9214723194629867568}
   - component: {fileID: 9214723194629867571}
   - component: {fileID: 748388423170216127}
+  - component: {fileID: 4912811270288908125}
   m_Layer: 0
   m_Name: car-yellow-driving
   m_TagString: Untagged
@@ -133,3 +134,15 @@ MonoBehaviour:
   yellowCar: {fileID: 8677306807485554851}
   startPosition: 630
   endPosition: -40
+--- !u!114 &4912811270288908125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8295679157106457113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a66165e1ee0aa546a22cb1353a87e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

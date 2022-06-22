@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2842826718848522011}
   - component: {fileID: 3508913751968926711}
   - component: {fileID: 3508913751968926710}
+  - component: {fileID: 6447298883994435657}
+  - component: {fileID: 2897291917808069497}
   m_Layer: 0
   m_Name: car-blue
   m_TagString: Untagged
@@ -116,3 +118,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6844912, y: 1.4420385, z: 4.774426}
   m_Center: {x: 0, y: 0.04884258, z: -0.05976081}
+--- !u!114 &6447298883994435657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355899647128712910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a66165e1ee0aa546a22cb1353a87e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2897291917808069497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355899647128712910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a66165e1ee0aa546a22cb1353a87e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
