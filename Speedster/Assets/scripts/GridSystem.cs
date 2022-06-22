@@ -86,7 +86,7 @@ public class GridSystem : MonoBehaviour
                     GameObject tree03L = Instantiate(tree03, tree03PositionLeft, Quaternion.identity);
 
                     garage = Random.Range(25, 35);
-                    Vector3 rndgarage = new Vector3(x - 20, 0, z + randomtree + garage);
+                    Vector3 rndgarage = new Vector3(x - 25, 0, z + randomtree + garage);
                     GameObject rndhomo04 = Instantiate(Home4, rndgarage, Quaternion.identity);
                 }
                 

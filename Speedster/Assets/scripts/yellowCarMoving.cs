@@ -16,13 +16,17 @@ public class yellowCarMoving : MonoBehaviour {
     }
 
 
-    void Update () {
-            if (transform.localPosition.z < startPosition) {
-                transform.Translate (0, 0, speed * Time.deltaTime * -1);
-                if (transform.localPosition.z < endPosition) {
-                transform.Translate (0, 0, (startPosition - endPosition));
+    void Update() {
+        if (transform.localPosition.z < startPosition) {
+            transform.Translate(0, 0, speed * Time.deltaTime * -1);
+            if (transform.localPosition.z < endPosition) {
+                transform.Translate(0, 0, (startPosition - endPosition));
             }
-            }
+        }
+        if (transform.localPosition.z > 630)
+        {
+            transform.Translate(0,0, -1);
+        }
         }
 
     }
