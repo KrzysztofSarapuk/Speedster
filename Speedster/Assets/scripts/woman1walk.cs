@@ -6,9 +6,10 @@ public class woman1walk : MonoBehaviour
 
     public float speed;
     public Transform woman; 
-    public Transform helper1;
+    public Transform helper1; public Transform helper2;
     public float startPosition;
     public float endPosition;
+    public float xPosition;
     //private NPC controller;
 
     void Start()
@@ -27,23 +28,30 @@ public class woman1walk : MonoBehaviour
                 transform.Translate(0, 0, (endPosition - startPosition));
             }
         }
-        if (transform.localPosition.x < 7.9)
+        if (transform.position.x < xPosition) //7.9
         {
             transform.Translate(0.02f, 0, 0);
         }
 
-        if (transform.localPosition.x > 8.1)
+        if (transform.position.x > xPosition + 0.2f) //8.1
         {
             transform.Translate(-0.02f, 0, 0);
         }
+
+
         if (transform.localPosition.z > 630)
         {
             transform.Translate(0, 0, -630);
-            
-            if(transform.localPosition.x != 8)
-                {
+
+            if ((transform.localPosition.x != xPosition) || (gameObject.name == "woman1")) // 8
+            {
                 transform.localPosition = helper1.localPosition;
-                }
+            }
+
+            if ((transform.localPosition.x != xPosition) || (gameObject.name == "woman2")) // 8
+            {
+                transform.localPosition = helper2.localPosition;
+            }
 
         }
         //if (transform.localPosition.y < 0.1f)

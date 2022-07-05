@@ -6,7 +6,7 @@ public class GridSystem : MonoBehaviour
     public GameObject tree02; public GameObject tree03; public GameObject Home1; public GameObject Home2; public GameObject Home3; public GameObject Home4;
     public GameObject yellowCar; public GameObject blueCar; public GameObject orangeCar; public GameObject Car; public GameObject straightline;
     public GameObject YellowCarMoving; public int width = 140; public int depth = 140;public int rndTree03; public int garage;public int countdown;
-    public GameObject woman1Moving;
+    public GameObject woman1Moving; public GameObject woman2Moving;
 
     void Start()
     {
@@ -40,8 +40,12 @@ public class GridSystem : MonoBehaviour
                     GameObject instatedYellowCarMoving = Instantiate(YellowCarMoving, YellowCarMovingPosition, Quaternion.identity);
 
                     int woman1 = Random.Range(10, 360); //woman1
-                    Vector3 woma1MovingPosition = new Vector3(8, 0.25f, z + woman1);
+                    Vector3 woma1MovingPosition = new Vector3(9, 0.25f, z + woman1);
                     GameObject instatedWoman1 = Instantiate(woman1Moving, woma1MovingPosition, Quaternion.identity);
+
+                    int woman2 = Random.Range(10, 360); //woman1
+                    Vector3 woma2MovingPosition = new Vector3(-9, 0.25f, z + woman2);
+                    GameObject instatedWoman2 = Instantiate(woman2Moving, woma2MovingPosition, Quaternion.identity);
 
 
 
