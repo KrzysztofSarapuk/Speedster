@@ -6,7 +6,7 @@ public class woman1walk : MonoBehaviour
 
     public float speed;
     public Transform woman; 
-    public Transform helper1; public Transform helper2;
+    public Transform helper1; public Transform helper2; public Transform helper3;
     public float startPosition;
     public float endPosition;
     public float xPosition;
@@ -51,6 +51,11 @@ public class woman1walk : MonoBehaviour
             if ((transform.localPosition.x != xPosition) || (gameObject.name == "woman2")) // 8
             {
                 transform.localPosition = helper2.localPosition;
+            }
+
+            if ((transform.localPosition.x != xPosition) || (gameObject.name == "woman3")) // 8
+            {
+                transform.Translate(0, 0, speed * Time.deltaTime * -1);
             }
 
         }
