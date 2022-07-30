@@ -44,7 +44,7 @@ public class GridSystem : MonoBehaviour
                     GameObject instatedWoman1 = Instantiate(woman1Moving, woma1MovingPosition, Quaternion.identity);
 
                     int woman2 = Random.Range(10, 360); //woman1
-                    Vector3 woma2MovingPosition = new Vector3(-9, 0.25f, z + woman2);
+                    Vector3 woma2MovingPosition = new Vector3(-7.5f, 0.25f, z + woman2);
                     GameObject instatedWoman2 = Instantiate(woman2Moving, woma2MovingPosition, Quaternion.identity);
 
 

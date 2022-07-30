@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 74
+  controlID: 88
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 75
+  controlID: 89
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 76
+  controlID: 90
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,20 +399,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: cad2fbff
-      m_LastClickedID: -273718
-      m_ExpandedIDs: 8ed2fbff92d2fbff96d2fbff9ad2fbff6efbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 14f1ffff18f1ffff7cf2ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: woman3A
-        m_OriginalName: woman3A
+        m_Name: helper2
+        m_OriginalName: helper2
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -273718
+        m_UserData: 18550
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -461,9 +461,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.8901706, y: 4.8361373, z: -18.170788}
+    m_Target: {x: 1.3955233, y: 4.4184637, z: -18.78018}
     speed: 2
-    m_Value: {x: 5.8901706, y: 4.8361373, z: -18.170788}
+    m_Value: {x: 1.3955233, y: 4.4184637, z: -18.78018}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -510,13 +510,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.056485858, y: -0.33479118, z: 0.020139925, w: 0.9404403}
+    m_Target: {x: -0.045649048, y: -0.1891689, z: -0.008772184, w: 0.9808994}
     speed: 2
-    m_Value: {x: 0.056482773, y: -0.3347729, z: 0.020138826, w: 0.940389}
+    m_Value: {x: -0.045646556, y: -0.18915857, z: -0.008771705, w: 0.98084587}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 2.857242
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 2.857242
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -698,14 +698,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: E:\Speedster\Speedster
+  m_LastProjectPath: F:\PracaMagisterska\Speedster\Speedster
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 1}
-    m_SelectedIDs: f0470000
-    m_LastClickedID: 18416
-    m_ExpandedIDs: 00000000f0470000f247000000ca9a3b
+    m_SelectedIDs: 5e4f0000
+    m_LastClickedID: 20318
+    m_ExpandedIDs: 000000005e4f0000604f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,7 +733,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f0470000f2470000
+    m_ExpandedIDs: 000000005e4f0000604f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -785,7 +785,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 11}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 286

@@ -1595,7 +1595,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 1f746172b80a7fe48b026eb7a8ea83c6, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1628,8 +1628,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   woman: {fileID: 4810565464588940671}
+  helper1: {fileID: 0}
+  helper2: {fileID: 0}
+  helper3: {fileID: 0}
   startPosition: 630
   endPosition: -40
+  xPosition: 0
 --- !u!114 &4992300317792995097
 MonoBehaviour:
   m_ObjectHideFlags: 0
