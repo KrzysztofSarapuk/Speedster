@@ -21,4 +21,9 @@ public class TimerScript : MonoBehaviour
         time += Time.deltaTime;
         uiText.text = "time: " + time.ToString("F2");
     }
+
+    public float getTime()
+    {
+        return time;
+    }
 }
