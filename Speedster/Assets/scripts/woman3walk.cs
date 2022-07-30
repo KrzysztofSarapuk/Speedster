@@ -24,6 +24,11 @@ public class woman3walk : MonoBehaviour
             {
                 transform.Translate(0, 0, -1 * (startPosition - endPosition));
             }
+
+        if (transform.localPosition.z > startPosition)
+        {
+            transform.Translate(0, 0, 1);
+        }
     }
 }
 

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &101249020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 688250330641046798, guid: 10ab0a27aab65014f8fdf5739b8b867a, type: 3}
+  m_PrefabInstance: {fileID: 2017162191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &105123865
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +193,8 @@ MonoBehaviour:
   countdown: 0
   woman1Moving: {fileID: 919132149236669218}
   woman2Moving: {fileID: 1891607391}
+  woman3Moving: {fileID: 101249020}
+  woman4Moving: {fileID: 101249020}
 --- !u!1 &260062017
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +540,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710007868}
-  m_LocalRotation: {x: 0.17067233, y: 0.000000008476966, z: -0.0000000014683269, w: 0.98532784}
+  m_LocalRotation: {x: 0.17067233, y: -0.00000000847696, z: 0.0000000014683262, w: 0.98532784}
   m_LocalPosition: {x: 0, y: 6.5, z: -23.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1084,7 +1091,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611956371}
-  m_LocalRotation: {x: 0.17067233, y: 0.000000008476966, z: -0.0000000014683269, w: 0.98532784}
+  m_LocalRotation: {x: 0.17067233, y: -0.00000000847696, z: 0.0000000014683262, w: 0.98532784}
   m_LocalPosition: {x: 0, y: 6.5, z: -23.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1212,6 +1219,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 425072318, guid: 10ab0a27aab65014f8fdf5739b8b867a, type: 3}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 425072318, guid: 10ab0a27aab65014f8fdf5739b8b867a, type: 3}
       propertyPath: helper3
       value: 
       objectReference: {fileID: 1616051700}
@@ -1269,7 +1280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 688250330641046798, guid: 10ab0a27aab65014f8fdf5739b8b867a, type: 3}
       propertyPath: m_Name
-      value: woman3A
+      value: woman3
+      objectReference: {fileID: 0}
+    - target: {fileID: 688250330641046798, guid: 10ab0a27aab65014f8fdf5739b8b867a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ab0a27aab65014f8fdf5739b8b867a, type: 3}

@@ -6,7 +6,7 @@ public class GridSystem : MonoBehaviour
     public GameObject tree02; public GameObject tree03; public GameObject Home1; public GameObject Home2; public GameObject Home3; public GameObject Home4;
     public GameObject yellowCar; public GameObject blueCar; public GameObject orangeCar; public GameObject Car; public GameObject straightline;
     public GameObject YellowCarMoving; public int width = 140; public int depth = 140;public int rndTree03; public int garage;public int countdown;
-    public GameObject woman1Moving; public GameObject woman2Moving;
+    public GameObject woman1Moving; public GameObject woman2Moving; public GameObject woman3Moving; public GameObject woman4Moving;
 
     void Start()
     {
@@ -43,9 +43,17 @@ public class GridSystem : MonoBehaviour
                     Vector3 woma1MovingPosition = new Vector3(9, 0.25f, z + woman1);
                     GameObject instatedWoman1 = Instantiate(woman1Moving, woma1MovingPosition, Quaternion.identity);
 
-                    int woman2 = Random.Range(10, 360); //woman1
+                    int woman2 = Random.Range(10, 360); //woman2
                     Vector3 woma2MovingPosition = new Vector3(-7.5f, 0.25f, z + woman2);
                     GameObject instatedWoman2 = Instantiate(woman2Moving, woma2MovingPosition, Quaternion.identity);
+
+                    int woman3 = Random.Range(10, 360); //woman3
+                    Vector3 woma3MovingPosition = new Vector3(-9f, 0.25f, z + woman3);
+                    GameObject instatedWoman3 = Instantiate(woman3Moving, woma3MovingPosition, Quaternion.Euler(0,180,0));
+
+                    int woman4 = Random.Range(10, 360); //woman4
+                    Vector3 woma4MovingPosition = new Vector3(7.5f, 0.25f, z + woman4);
+                    GameObject instatedWoman4 = Instantiate(woman4Moving, woma4MovingPosition, Quaternion.Euler(0, 180, 0));
 
 
 
