@@ -6,6 +6,7 @@ TagManager:
   tags:
   - penalty
   - grass
+  - globalScore
   layers:
   - Default
   - TransparentFX

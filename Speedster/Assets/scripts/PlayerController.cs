@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
 
-    public Text uiPenaltyPoints;
-    public float score = 0;
+    public Text uiPenaltyPoints; public Text uiGlobalPoints;
+    public float score = 0; public float globalScore = 0; public float timeScore = 0; public float result = 0;
     private bool collided;
     // Start is called before the first frame update
     void Start()
     {
         uiPenaltyPoints = GameObject.Find("penalty").GetComponent<Text>();
+        uiGlobalPoints = GameObject.Find("globalScore").GetComponent<Text>();
     }
 
     private float speed = 20.0f;
@@ -30,12 +31,16 @@ public class PlayerController : MonoBehaviour
         // turning
         transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
 
+        timeScore += Time.deltaTime;
+
         if (collided == true)
         {
             score += Time.deltaTime;
             uiPenaltyPoints.text = "penalty points: " + score.ToString("F2");
-            print("grass");
         }
+
+        result = score + timeScore;
+        uiGlobalPoints.text = "Global points: " + result.ToString("F2");
 
     }
 
