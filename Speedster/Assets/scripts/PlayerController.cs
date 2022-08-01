@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
 
-    public Text uiPenaltyPoints; public Text uiGlobalPoints;
+    public Text uiPenaltyPoints; public Text uiGlobalPoints; public Text capturedFlags;
     public float score = 0; public float globalScore = 0; public float timeScore = 0; public float result = 0;
-    private bool collided;
+    private bool collided; public int flags = 0;
     // Start is called before the first frame update
     void Start()
     {
         uiPenaltyPoints = GameObject.Find("penalty").GetComponent<Text>();
         uiGlobalPoints = GameObject.Find("globalScore").GetComponent<Text>();
-        //uiGlobalPoints.text = "Global points: " + globalScore;
+        capturedFlags = GameObject.Find("flags").GetComponent<Text>();
         uiPenaltyPoints.text = "penalty points: 0.00";
     }
 
@@ -51,6 +51,13 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "grass")
         {
             collided = true;
+        }
+
+        if (collision.gameObject.tag == "flag")
+        {
+            flags = int.Parse(capturedFlags.text);
+            flags++;
+            capturedFlags.text =  flags.ToString();
         }
 
     }
