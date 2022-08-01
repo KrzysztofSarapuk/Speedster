@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     {
         uiPenaltyPoints = GameObject.Find("penalty").GetComponent<Text>();
         uiGlobalPoints = GameObject.Find("globalScore").GetComponent<Text>();
+        //uiGlobalPoints.text = "Global points: " + globalScore;
+        uiPenaltyPoints.text = "penalty points: 0.00";
     }
 
     private float speed = 20.0f;
