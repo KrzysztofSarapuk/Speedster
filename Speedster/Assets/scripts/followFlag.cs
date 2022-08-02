@@ -18,13 +18,28 @@ public class followFlag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(this.transform.position, flags[currentFlag].transform.position) < 3)
-            currentFlag++;
+        
 
-        if (currentFlag >= flags.Length)
-            currentFlag = 0;
 
-        this.transform.LookAt(flags[currentFlag].transform);
-        this.transform.Translate(0, 0, speed * Time.deltaTime);
+
+
+        if (currentFlag < flags.Length)
+        {
+            if (flags[currentFlag] != null)
+            {
+                if (Vector3.Distance(this.transform.position, flags[currentFlag].transform.position) < 3)
+                    currentFlag++;
+            }
+
+            if (flags[currentFlag] == null)
+            {
+                currentFlag++;
+                print("dlugosc tablicy"  + flags.Length);
+            }
+
+            this.transform.LookAt(flags[currentFlag].transform);
+            this.transform.Translate(0, 0, speed * Time.deltaTime);
+        }
+
     }
 }

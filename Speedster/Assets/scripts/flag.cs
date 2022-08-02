@@ -22,5 +22,10 @@ public class flag : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (collision.gameObject.tag == "enemy")
+        {
+            Destroy(gameObject);
+        }
+
     }
 }
