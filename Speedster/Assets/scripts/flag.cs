@@ -19,12 +19,17 @@ public class flag : MonoBehaviour
     {
         if (collision.gameObject.tag == "player")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            this.gameObject.SetActive(false);
+
+
+
         }
 
         if (collision.gameObject.tag == "enemy")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
 
     }

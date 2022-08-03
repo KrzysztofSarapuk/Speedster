@@ -18,12 +18,12 @@ public class followFlag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
 
 
 
-        if (currentFlag < flags.Length)
+
+        if (currentFlag < flags.Length -1 )
         {
             if (flags[currentFlag] != null)
             {
@@ -34,11 +34,22 @@ public class followFlag : MonoBehaviour
             if (flags[currentFlag] == null)
             {
                 currentFlag++;
-                print("dlugosc tablicy"  + flags.Length);
+                print("dlugosc tablicy" + flags.Length);
             }
 
-            this.transform.LookAt(flags[currentFlag].transform);
-            this.transform.Translate(0, 0, speed * Time.deltaTime);
+
+            if (currentFlag < flags.Length)
+            {
+                print("Wynik:   " + currentFlag.ToString());
+            }
+
+            
+            if (currentFlag < flags.Length -1 )
+            {
+                this.transform.LookAt(flags[currentFlag].transform);
+                this.transform.Translate(0, 0, speed * Time.deltaTime);
+            }
+
         }
 
     }

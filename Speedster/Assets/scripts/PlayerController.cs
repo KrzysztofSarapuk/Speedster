@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         }
 
         result = score + timeScore;
-        uiGlobalPoints.text = "Global points: " + result.ToString("F2");
+        uiGlobalPoints.text = "Points: " + result.ToString("F2");
 
     }
 
